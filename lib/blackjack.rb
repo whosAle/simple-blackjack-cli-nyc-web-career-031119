@@ -34,9 +34,9 @@ end
 
 def hit?(current_sum)
   prompt_user
-  get_user_input
+  turn = get_user_input
 
-  case get_user_input
+  case turn
   when "h"
     card = deal_card
   when "s"
