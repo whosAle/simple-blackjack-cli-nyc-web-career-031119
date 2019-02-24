@@ -39,7 +39,6 @@ def hit?(current_sum)
   case turn
   when "h"
     card = deal_card
-    puts "you drew #{card}"
   when "s"
     card = 0
   else
@@ -61,8 +60,8 @@ end
 
 def runner
   welcome
-
   card_total = initial_round
+  
   while card_total <= 21
     card_total = hit?(card_total)
   end
