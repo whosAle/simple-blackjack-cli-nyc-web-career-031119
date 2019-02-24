@@ -38,7 +38,7 @@ def hit?(current_sum)
   when "h"
     deal_card
   when !"h" || !"s"
-    invalid_command    
+    invalid_command
   end
 
   display_card_total
@@ -56,4 +56,3 @@ end
 def runner
   # code runner here
 end
-    
