@@ -34,7 +34,7 @@ end
 
 def hit?(current_sum)
   prompt_user
-  turn = get_user_input
+  get_user_input
 
   case turn
   when "h"
