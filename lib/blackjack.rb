@@ -38,12 +38,15 @@ def hit?(current_sum)
 
   case get_user_input
   when "h"
-    deal_card
-  when !"h" || !"s"
+    card = deal_card
+  when "s"
+    card = 0
+  else
     invalid_command
   end
 
-  display_card_total
+  display_card_total(current_sum + card)
+  current_sum += card
 end
 
 def invalid_command
