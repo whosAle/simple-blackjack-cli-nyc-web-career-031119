@@ -39,6 +39,7 @@ def hit?(current_sum)
   case turn
   when "h"
     card = deal_card
+    puts "you drew #{card}"
   when "s"
     card = 0
   else
