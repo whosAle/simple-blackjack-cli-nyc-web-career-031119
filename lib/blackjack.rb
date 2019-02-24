@@ -63,4 +63,4 @@ def runner
 end
 
 
-hit?(3)
+#hit?(3)
